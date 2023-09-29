@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Media Websit Disign</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-left">
+        <a href="index.html" class="logo"><img src="images/logo.png" /></a>
+
+        <div class="search-box">
+          <img src="images/search.png" alt="" />
+          <input type="text" placeholder="Search" />
+        </div>
+      </div>
+      <div class="navbar-center">
+        <ul>
+          <li>
+            <a href="#" class="activ-link"
+              ><img src="images/home.png" alt="" /><span>Home</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="images/network.png" alt="" /><span>My Network</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="images/jobs.png" alt="" /><span>Jobs</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="images/message.png" alt="" /><span>Messaging</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="images/notification.png" alt="" /><span
+                >Notifications</span
+              ></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="navbar-right">
+        <div class="online">
+          <img
+            src="images/user-1.png"
+            alt=""
+            class="nav-profile-img"
+            onclick="toggelMenu()"
+          />
+        </div>
+      </div>
+      <!---------------profile drop down menu--------->
+      <div class="profile-menu-wrap" id="profile-menu">
+        <div class="profile-menu">
+          <div class="user-info">
+            <img src="images/user-1.png" />
+            <div>
+              <h3>Anas Laghrissi</h3>
+              <a href="profile.html">See your profile</a>
+            </div>
+          </div>
+          <hr />
+          <a href="#" class="profile-menu-link">
+            <img src="images/feedback.png" />
+            <p>Give Feedback</p>
+            <span>></span>
+          </a>
+          <a href="#" class="profile-menu-link">
+            <img src="images/setting.png" />
+            <p>Setting & Privacy</p>
+            <span>></span>
+          </a>
+          <a href="#" class="profile-menu-link">
+            <img src="images/help.png" />
+            <p>Help & Support</p>
+            <span>></span>
+          </a>
+          <a href="#" class="profile-menu-link">
+            <img src="images/display.png" />
+            <p>Display & Accessiblity</p>
+            <span>></span>
+          </a>
+          <a href="#" class="profile-menu-link">
+            <img src="images/logout.png" />
+            <p>Logout</p>
+            <span>></span>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!---------------- navbar end ------------>
+
+    <div class="container">
+      <div class="profile-main">
+        <div class="profile-container">
+          <img src="images/cover-pic.png" width="100%" />
+          <div class="profile-container-inner">
+            <img src="images/user-1.png" class="profile-pic" />
+            <h1>Anas Laghrissi</h1>
+            <b>Web Developer at Microsoft | Front-end developer</b>
+            <p>
+              Prefecture of Tangier - Assilah, Tanger-Tetouan-Al Hoceima,
+              Morocco &middot;<br />
+              <a href="#">Contact info</a> <br />
+              <a href="#">500+ connections</a>
+            </p>
+
+            <div class="profile-btn">
+              <a href="#">Open to</a>
+              <a href="#">Add profile section</a>
+              <a href="#">More</a>
+            </div>
+          </div>
+        </div>
+        <div class="profile-description">
+          <h2>About</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam
+            cum minima eaque molestiae quod harum quidem officia hic, velit
+            alias asperiores porro illum. Magnam nulla, porro magni totam ea
+            repellat!
+          </p>
+          <a href="#" class="see-more">See more...</a>
+        </div>
+
+        <div class="profile-description">
+          <h2>Experience</h2>
+          <div class="profile-dec-row">
+            <img src="images/cdmo.jpeg" />
+            <div>
+              <h3>Stage en qualité d'ajusteur mouliste</h3>
+              <b>CDMO TANGER MED &middot; Internship</b>
+              <b>Jan 2023 - Apr 2023 &middot; 4 mos</b>
+              <p>Tanger et périphérie</p>
+              <hr />
+            </div>
+          </div>
+          <div class="profile-dec-row">
+            <img src="images/microsoft.png" />
+            <div>
+              <h3>Lead Front-End Devloper</h3>
+              <b>Microsoft &middot; Full-time</b>
+              <b>Feb 2021 - Present &middot; 1.5 years</b>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+                quibusdam aliquam ea debitis totam repudiandae libero, eum
+                accusantium.
+              </p>
+              <hr />
+            </div>
+          </div>
+          <div class="profile-dec-row">
+            <img src="images/microsoft.png" />
+            <div>
+              <h3>Lead Front-End Devloper</h3>
+              <b>Microsoft &middot; Full-time</b>
+              <b>Feb 2021 - Present &middot; 1.5 years</b>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+                quibusdam aliquam ea debitis totam repudiandae libero, eum
+                accusantium.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="profile-description">
+          <h2>Education</h2>
+          <div class="profile-dec-row">
+            <img src="images/iF.png" />
+            <div>
+              <h3>
+                Institut de formation aux métiers de l'idustrie automobile de
+                Tanger
+              </h3>
+              <b
+                >Stagaire Technicien spécialisé génie mécanique, conception &
+                fabrication</b
+              >
+              <b> Sep 2022 - Jul 2024</b>
+            </div>
+          </div>
+          <hr />
+          <div class="profile-dec-row">
+            <img src="images/iF.png" />
+            <div>
+              <h3>Lycée zone industrielle</h3>
+              <b
+                >Baccalauréat sciences expérimentales option sciences physique -
+                option Francais</b
+              >
+              <b> Sep 2021 - Jul 2022</b>
+            </div>
+          </div>
+        </div>
+        <div class="profile-description">
+          <h2>Skills</h2>
+
+          <a href="#" class="skills-btn">Front-End Developer</a>
+          <a href="#" class="skills-btn">CATIA V5</a>
+          <a href="#" class="skills-btn">Leadership</a>
+          <a href="#" class="skills-btn">Web Design</a>
+          <a href="#" class="skills-btn">JavaScript</a>
+          <a href="#" class="skills-btn">UI/UX</a>
+          <a href="#" class="skills-btn"> Developer</a>
+        </div>
+        <div class="profile-description">
+          <h2>Languages</h2>
+
+          <a href="#" class="Language-btn">English</a>
+          <a href="#" class="Language-btn">French</a>
+          <a href="#" class="Language-btn">Arabic</a>
+        </div>
+      </div>
+      <!---------------profile-sidebar----------->
+      <div class="profile-sidebar">
+        <div class="sidebar-ad">
+          <small>Ad &middot; &middot; &middot;</small>
+          <p>Master the 5 priciples of web design</p>
+          <div>
+            <img src="images/user-1.png" />
+            <img src="images/mi-logo.png" />
+          </div>
+          <b>Brand and Demand in Xiaomi</b>
+          <a href="#" class="ad-link">Learn More</a>
+        </div>
+        <div class="sidebar-people">
+          <h3>People you may know</h3>
+          <div class="sidebar-people-row">
+            <img src="images/user-3.png" />
+            <div>
+              <h2>Samuel Tony</h2>
+              <p>Head of Marketing at Alibaba</p>
+              <a href="#">Connect</a>
+            </div>
+          </div>
+          <div class="sidebar-people-row">
+            <img src="images/user-4.png" />
+            <div>
+              <h2>Benjamai Leo</h2>
+              <p>Head of Marketing at Alibaba</p>
+              <a href="#">Connect</a>
+            </div>
+          </div>
+          <div class="sidebar-people-row">
+            <img src="images/user-5.png" />
+            <div>
+              <h2>Sohail Greg</h2>
+              <p>Head of Marketing at Alibaba</p>
+              <a href="#">Connect</a>
+            </div>
+          </div>
+          <div class="sidebar-people-row">
+            <img src="images/user-2.png" />
+            <div>
+              <h2>Fouad Greoge</h2>
+              <p>Head of Marketing at Alibaba</p>
+              <a href="#">Connect</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="profile-footer">
+      <div class="sidebar-useful-links">
+        <a href="#">About</a>
+        <a href="#">Accessiblity</a>
+        <a href="#">Help Center</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Advertising</a>
+        <a href="#">Get the App</a>
+        <a href="#">More</a>
+
+        <div class="copyright-msg">
+          <img src="images/logo.png" />
+          <p>LinkedIn Corporation &#169; 2023</p>
+        </div>
+      </div>
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>

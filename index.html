@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Media Websit Disign</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-left">
+        <a href="index.html" class="logo"><img src="images/logo.png" /></a>
+
+        <div class="search-box">
+          <img src="images/search.png" alt="" />
+          <input type="text" placeholder="Search" />
+        </div>
+      </div>
+      <div class="navbar-center">
+        <ul>
+          <li>
+            <a href="#" class="activ-link"
+              ><img src="images/home.png" alt="" /><span>Home</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="images/network.png" alt="" /><span>My Network</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="images/jobs.png" alt="" /><span>Jobs</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="images/message.png" alt="" /><span>Messaging</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="images/notification.png" alt="" /><span
+                >Notifications</span
+              ></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="navbar-right">
+        <div class="online">
+          <img
+            src="images/user-1.png"
+            alt=""
+            class="nav-profile-img"
+            onclick="toggelMenu()"
+          />
+        </div>
+      </div>
+      <!---------------profile drop down menu--------->
+      <div class="profile-menu-wrap" id="profile-menu">
+        <div class="profile-menu">
+          <div class="user-info">
+            <img src="images/user-1.png" />
+            <div>
+              <h3>Anas Laghrissi</h3>
+              <a href="profile.html">See your profile</a>
+            </div>
+          </div>
+          <hr />
+          <a href="#" class="profile-menu-link">
+            <img src="images/feedback.png" />
+            <p>Give Feedback</p>
+            <span>></span>
+          </a>
+          <a href="#" class="profile-menu-link">
+            <img src="images/setting.png" />
+            <p>Setting & Privacy</p>
+            <span>></span>
+          </a>
+          <a href="#" class="profile-menu-link">
+            <img src="images/help.png" />
+            <p>Help & Support</p>
+            <span>></span>
+          </a>
+          <a href="#" class="profile-menu-link">
+            <img src="images/display.png" />
+            <p>Display & Accessiblity</p>
+            <span>></span>
+          </a>
+          <a href="#" class="profile-menu-link">
+            <img src="images/logout.png" />
+            <p>Logout</p>
+            <span>></span>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!---------------- navbar end ------------>
+    <div class="container">
+      <!---------------- left-sidebar ------------>
+      <div class="left-sidebar">
+        <div class="sidebar-profile-box">
+          <img src="images/cover-pic.png" width="100%" alt="" />
+          <div class="sidebar-profile-info">
+            <img src="images/user-1.png" />
+            <h1>Anas laghrissi</h1>
+            <h3>Web Developer at Microsoft</h3>
+            <ul>
+              <li>Your profile views <span>452</span></li>
+              <li>Your post views <span>810</span></li>
+              <li>Your connections views <span>500+</span></li>
+            </ul>
+          </div>
+          <div class="sidebar-profile-link">
+            <a href="#"><img src="images/items.png" />My items</a>
+            <a href="#"><img src="images/premium.png" />Try Premium</a>
+          </div>
+        </div>
+        <div class="sidebar-activity" id="sidebarActivity">
+          <h3>RECENT</h3>
+          <a href="#"><img src="images/recent.png" />Web Developer</a>
+          <a href="#"><img src="images/recent.png" />Learn Online</a>
+          <a href="#"><img src="images/recent.png" />Code Better</a>
+          <a href="#"><img src="images/recent.png" />User Interfice</a>
+          <a href="#"><img src="images/recent.png" />Developer</a>
+          <a href="#"><img src="images/recent.png" />Group Learning</a>
+          <h3>GROUPS</h3>
+          <a href="#"><img src="images/group.png" />Web Design</a>
+          <a href="#"><img src="images/group.png" />HTML & CSS</a>
+          <a href="#"><img src="images/group.png" />Learn Coding</a>
+          <a href="#"><img src="images/group.png" />JavaScript Group</a>
+          <h3>HASHTAG</h3>
+          <a href="#"><img src="images/hashtag.png" />webdevlepment</a>
+          <a href="#"><img src="images/hashtag.png" />userinterface</a>
+          <a href="#"><img src="images/hashtag.png" />onlinelesrning</a>
+          <div class="discover-more-link">
+            <a href="#">Discover more</a>
+          </div>
+        </div>
+        <p id="show-more-links" onclick="show()">Show more <b>+</b></p>
+      </div>
+      <!---------------- main-content ------------>
+      <div class="main-content">
+        <div class="create-post">
+          <div class="create-post-input">
+            <img src="images/user-1.png" />
+            <textarea placeholder="Write a post" rows="2"></textarea>
+          </div>
+          <div class="create-post-links">
+            <li><img src="images/photo.png" />Photo</li>
+            <li><img src="images/video.png" />Video</li>
+            <li><img src="images/event.png" />Event</li>
+            <li>Post</li>
+          </div>
+        </div>
+        <div class="sort-by">
+          <hr />
+          <p>
+            Sort by: <span>top <img src="images/down-arrow.png" /></span>
+          </p>
+        </div>
+        <div class="post">
+          <div class="post-author">
+            <img src="images/user-2.png" />
+            <div>
+              <h1>Benjamai leo</h1>
+              <small>founder and CEO at Gellelio Group | Angel Investor</small>
+              <small>2 hours ago</small>
+            </div>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
+            cupiditate magnam molestiae laborum maiores quasi ea officiis
+            delectus minima, in placeat sunt corporis ad! Dolorem commodi iste
+            saepe aperiam sapiente?
+          </p>
+          <img src="images/post-image-1.png" width="100%" />
+          <div class="post-stats">
+            <div>
+              <img src="images/thumbsup.png" />
+              <img src="images/love.png" />
+              <img src="images/clap.png" />
+              <span class="liked-users">Abhinav Mishra and 75 others</span>
+            </div>
+            <div>
+              <span>22 comment &middot; 40 shares</span>
+            </div>
+          </div>
+          <div class="post-avtivity">
+            <div class="post-activity-link">
+              <img src="images/like.png" />
+              <span>Like</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/comment.png" />
+              <span>Comment</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/share.png" />
+              <span>Share</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/send.png" />
+              <span>Send</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="post">
+          <div class="post-author">
+            <img src="images/user-3.png" />
+            <div>
+              <h1>Carence George</h1>
+              <small>founder and CEO at Gellelio Group | Angel Investor</small>
+              <small>2 hours ago</small>
+            </div>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
+            cupiditate magnam molestiae laborum maiores quasi ea officiis
+            delectus minima, in placeat sunt corporis ad! Dolorem commodi iste
+            saepe aperiam sapiente?
+          </p>
+          <img src="images/post-image-2.png" width="100%" />
+          <div class="post-stats">
+            <div>
+              <img src="images/thumbsup.png" />
+              <img src="images/love.png" />
+              <img src="images/clap.png" />
+              <span class="liked-users">Abhinav Mishra and 75 others</span>
+            </div>
+            <div>
+              <span>22 comment &middot; 40 shares</span>
+            </div>
+          </div>
+          <div class="post-avtivity">
+            <div class="post-activity-link">
+              <img src="images/like.png" />
+              <span>Like</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/comment.png" />
+              <span>Comment</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/share.png" />
+              <span>Share</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/send.png" />
+              <span>Send</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="post">
+          <div class="post-author">
+            <img src="images/user-4.png" />
+            <div>
+              <h1>Amina George</h1>
+              <small>founder and CEO at Gellelio Group | Angel Investor</small>
+              <small>2 hours ago</small>
+            </div>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
+            cupiditate magnam molestiae laborum maiores quasi ea officiis
+            delectus minima, in placeat sunt corporis ad! Dolorem commodi iste
+            saepe aperiam sapiente?
+          </p>
+          <img src="images/post-image-3.png" width="100%" />
+          <div class="post-stats">
+            <div>
+              <img src="images/thumbsup.png" />
+              <img src="images/love.png" />
+              <img src="images/clap.png" />
+              <span class="liked-users">Abhinav Mishra and 75 others</span>
+            </div>
+            <div>
+              <span>22 comment &middot; 40 shares</span>
+            </div>
+          </div>
+          <div class="post-avtivity">
+            <div class="post-activity-link">
+              <img src="images/like.png" />
+              <span>Like</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/comment.png" />
+              <span>Comment</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/share.png" />
+              <span>Share</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/send.png" />
+              <span>Send</span>
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <div class="post-author">
+            <img src="images/user-4.png" />
+            <div>
+              <h1>Amina George</h1>
+              <small>founder and CEO at Gellelio Group | Angel Investor</small>
+              <small>2 hours ago</small>
+            </div>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
+            cupiditate magnam molestiae laborum maiores quasi ea officiis
+            delectus minima, in placeat sunt corporis ad! Dolorem commodi iste
+            saepe aperiam sapiente?
+          </p>
+          <img src="images/post-image-4.png" width="100%" />
+          <div class="post-stats">
+            <div>
+              <img src="images/thumbsup.png" />
+              <img src="images/love.png" />
+              <img src="images/clap.png" />
+              <span class="liked-users">Abhinav Mishra and 75 others</span>
+            </div>
+            <div>
+              <span>22 comment &middot; 40 shares</span>
+            </div>
+          </div>
+          <div class="post-avtivity">
+            <div class="post-activity-link">
+              <img src="images/like.png" />
+              <span>Like</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/comment.png" />
+              <span>Comment</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/share.png" />
+              <span>Share</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/send.png" />
+              <span>Send</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!---------------- right-sidebar ------------>
+      <div class="right-sidebar">
+        <div class="sidebar-news">
+          <img src="images/more.png" class="info-icon" alt="" />
+          <h1>Treding News</h1>
+          <a href="#">High demand for skilled manpower </a>
+          <span>1d ago &middot; 10,934 readers</span>
+
+          <a href="#">Carees growing horizontal too </a>
+          <span>19h ago &middot; 1,934 readers</span>
+
+          <a href="#">Less work visa for US, more for UK </a>
+          <span>1d ago &middot; 27,290 readers</span>
+
+          <a href="#">More hiring = higher confidence? </a>
+          <span>1d ago &middot; 8,685 readers</span>
+
+          <a href="#">Gautam Adani is the world's third richest</a>
+          <span>1d ago &middot; 4,524 readers</span>
+
+          <a href="#" class="read-more-link">Read More</a>
+        </div>
+        <div class="sidebar-ad">
+          <small>Ad &middot; &middot; &middot;</small>
+          <p>Master the 5 priciples of web design</p>
+          <div>
+            <img src="images/user-1.png" />
+            <img src="images/mi-logo.png" />
+          </div>
+          <b>Brand and Demand in Xiaomi</b>
+          <a href="#" class="ad-link">Learn More</a>
+        </div>
+        <div class="sidebar-useful-links">
+          <a href="#">About</a>
+          <a href="#">Accessiblity</a>
+          <a href="#">Help Center</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Advertising</a>
+          <a href="#">Get the App</a>
+          <a href="#">More</a>
+
+          <div class="copyright-msg">
+            <img src="images/logo.png" />
+            <p>LinkedIn Corporation &#169; 2023</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
